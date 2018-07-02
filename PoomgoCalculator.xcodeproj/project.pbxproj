@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720EFBF320E8E40900C45B20 /* CBMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EFBF220E8E40900C45B20 /* CBMViewController.swift */; };
+		720EFBF520E8E4E100C45B20 /* CBM_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720EFBF420E8E4E100C45B20 /* CBM_Model.swift */; };
 		72D4A1E420E8C1C800CD1B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A1E320E8C1C800CD1B72 /* AppDelegate.swift */; };
 		72D4A1E620E8C1C800CD1B72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A1E520E8C1C800CD1B72 /* ViewController.swift */; };
 		72D4A1E920E8C1C800CD1B72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D4A1E720E8C1C800CD1B72 /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		720EFBF220E8E40900C45B20 /* CBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBMViewController.swift; sourceTree = "<group>"; };
+		720EFBF420E8E4E100C45B20 /* CBM_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBM_Model.swift; sourceTree = "<group>"; };
 		72D4A1E020E8C1C800CD1B72 /* PoomgoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoomgoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D4A1E320E8C1C800CD1B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72D4A1E520E8C1C800CD1B72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		720EFBEF20E8E3C300C45B20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				720EFBF420E8E4E100C45B20 /* CBM_Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		720EFBF020E8E3CC00C45B20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72D4A1E720E8C1C800CD1B72 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		720EFBF120E8E3D100C45B20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				72D4A1E520E8C1C800CD1B72 /* ViewController.swift */,
+				720EFBF220E8E40900C45B20 /* CBMViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		72D4A1D720E8C1C800CD1B72 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +128,10 @@
 		72D4A1E220E8C1C800CD1B72 /* PoomgoCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				720EFBF120E8E3D100C45B20 /* Controller */,
+				720EFBF020E8E3CC00C45B20 /* View */,
+				720EFBEF20E8E3C300C45B20 /* Model */,
 				72D4A1E320E8C1C800CD1B72 /* AppDelegate.swift */,
-				72D4A1E520E8C1C800CD1B72 /* ViewController.swift */,
-				72D4A1E720E8C1C800CD1B72 /* Main.storyboard */,
 				72D4A1ED20E8C1C900CD1B72 /* Assets.xcassets */,
 				72D4A1EF20E8C1C900CD1B72 /* LaunchScreen.storyboard */,
 				72D4A1F220E8C1C900CD1B72 /* Info.plist */,
@@ -260,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D4A1E620E8C1C800CD1B72 /* ViewController.swift in Sources */,
+				720EFBF520E8E4E100C45B20 /* CBM_Model.swift in Sources */,
 				72D4A1E420E8C1C800CD1B72 /* AppDelegate.swift in Sources */,
 				72D4A1EC20E8C1C800CD1B72 /* PoomgoCalculator.xcdatamodeld in Sources */,
+				720EFBF320E8E40900C45B20 /* CBMViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
