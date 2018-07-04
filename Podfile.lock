@@ -1,0 +1,16 @@
+PODS:
+  - LabelSwitch (0.1.3)
+
+DEPENDENCIES:
+  - LabelSwitch
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LabelSwitch
+
+SPEC CHECKSUMS:
+  LabelSwitch: 47f3862c556c87648ebbafea772a7883a02ed2fe
+
+PODFILE CHECKSUM: 3478c2c0573d773b6092bdb79c23da9ba0b2b05a
+
+COCOAPODS: 1.5.3

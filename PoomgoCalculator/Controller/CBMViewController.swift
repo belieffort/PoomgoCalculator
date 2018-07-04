@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import LabelSwitch
 
-class CBMViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CBMViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, LabelSwitchDelegate {
+    
+    func switchChangToState(_ state: SwitchState) {
+        switch state {
+        case .L: print("circle on left")
+        case .R: print("circle on right")
+        }
+    }
+    
     
     @IBOutlet weak var pickerView: UIPickerView! 
     
@@ -27,6 +36,15 @@ class CBMViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     var valueOfPer : Int = 0
     var totalValue : Int = 0
     
+    let ls = LabelSwtichSetting(text: "cm",
+                                textColor: .white,
+                                font: UIFont.boldSystemFont(ofSize: 15),
+                                backgroundColor: .red)
+    
+    let rs = LabelSwtichSetting(text: "mm",
+                                textColor: .white,
+                                font: UIFont.boldSystemFont(ofSize: 20),
+                                backgroundColor: .green)
     
     
     override func viewDidLoad() {
@@ -35,7 +53,18 @@ class CBMViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         pickerView.delegate = self
         pickerView.dataSource = self
         
-       
+        // Set the default state of the switch,
+        let labelSwitch = LabelSwitch(center: .zero, leftSetting: ls, rightSetting: rs, defaultState: .L)
+        
+        // Set the appearance of the circle button
+        labelSwitch.circleShadow = false
+        labelSwitch.circleColor = .red
+        
+        // Make switch be triggered by tapping on any position in the switch
+        labelSwitch.fullSizeTapEnabled = true
+        
+        // Set the delegate to inform when the switch was triggered
+        labelSwitch.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,27 +140,14 @@ class CBMViewController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             
         }
     }
-    
-    //            if selectedRow == "m" {
-    //                print("here is m")
-    //
-    //            } else if selectedRow == "cm" {
-    //                print("here is cm")
-    //
-    //
-    //            } else if selectedRow == "mm" {
-    //                print("here is mm")
-    //
-    //            }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+extension ViewController: LabelSwitchDelegate {
+    func switchChangToState(_ state: SwitchState) {
+        switch state {
+        case .L: print("circle on left")
+        case .R: print("circle on right")
+        }
+    }
+}
+

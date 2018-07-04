@@ -1,0 +1,6 @@
+framework module Pods_PoomgoCalculator {
+  umbrella header "Pods-PoomgoCalculator-umbrella.h"
+
+  export *
+  module * { export * }
+}

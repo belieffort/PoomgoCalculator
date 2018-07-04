@@ -17,6 +17,7 @@
 		72D4A1F120E8C1C900CD1B72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D4A1EF20E8C1C900CD1B72 /* LaunchScreen.storyboard */; };
 		72D4A1FC20E8C1CA00CD1B72 /* PoomgoCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A1FB20E8C1CA00CD1B72 /* PoomgoCalculatorTests.swift */; };
 		72D4A20720E8C1CA00CD1B72 /* PoomgoCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A20620E8C1CA00CD1B72 /* PoomgoCalculatorUITests.swift */; };
+		CDD3699F056E7E5C0B3124E0 /* Pods_PoomgoCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C96011C9026CB591A45AA9 /* Pods_PoomgoCalculator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50C96011C9026CB591A45AA9 /* Pods_PoomgoCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoomgoCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720EFBF220E8E40900C45B20 /* CBMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBMViewController.swift; sourceTree = "<group>"; };
 		720EFBF420E8E4E100C45B20 /* CBM_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBM_Model.swift; sourceTree = "<group>"; };
 		72D4A1E020E8C1C800CD1B72 /* PoomgoCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoomgoCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,8 @@
 		72D4A20220E8C1CA00CD1B72 /* PoomgoCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoomgoCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D4A20620E8C1CA00CD1B72 /* PoomgoCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoomgoCalculatorUITests.swift; sourceTree = "<group>"; };
 		72D4A20820E8C1CA00CD1B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77D9E7D520DC833B6E6F8B65 /* Pods-PoomgoCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoomgoCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoomgoCalculator/Pods-PoomgoCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		D5F29BC48E9C4A525D50BCF7 /* Pods-PoomgoCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoomgoCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoomgoCalculator/Pods-PoomgoCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD3699F056E7E5C0B3124E0 /* Pods_PoomgoCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F661D98B0F60FC4179A7107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5F29BC48E9C4A525D50BCF7 /* Pods-PoomgoCalculator.debug.xcconfig */,
+				77D9E7D520DC833B6E6F8B65 /* Pods-PoomgoCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4BE586717518BAE4AB7A7FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C96011C9026CB591A45AA9 /* Pods_PoomgoCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		720EFBEF20E8E3C300C45B20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +134,8 @@
 				72D4A1FA20E8C1CA00CD1B72 /* PoomgoCalculatorTests */,
 				72D4A20520E8C1CA00CD1B72 /* PoomgoCalculatorUITests */,
 				72D4A1E120E8C1C800CD1B72 /* Products */,
+				2F661D98B0F60FC4179A7107 /* Pods */,
+				4BE586717518BAE4AB7A7FB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72D4A20B20E8C1CA00CD1B72 /* Build configuration list for PBXNativeTarget "PoomgoCalculator" */;
 			buildPhases = (
+				40D9C71F0EFFE1E8DCF70028 /* [CP] Check Pods Manifest.lock */,
 				72D4A1DC20E8C1C800CD1B72 /* Sources */,
 				72D4A1DD20E8C1C800CD1B72 /* Frameworks */,
 				72D4A1DE20E8C1C800CD1B72 /* Resources */,
+				8B614F1D0040C21EB1642A76 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +309,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40D9C71F0EFFE1E8DCF70028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoomgoCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B614F1D0040C21EB1642A76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PoomgoCalculator/Pods-PoomgoCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LabelSwitch/LabelSwitch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LabelSwitch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoomgoCalculator/Pods-PoomgoCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72D4A1DC20E8C1C800CD1B72 /* Sources */ = {
@@ -464,9 +529,11 @@
 		};
 		72D4A20C20E8C1CA00CD1B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5F29BC48E9C4A525D50BCF7 /* Pods-PoomgoCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 226VAZJ4DZ;
 				INFOPLIST_FILE = PoomgoCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -481,9 +548,11 @@
 		};
 		72D4A20D20E8C1CA00CD1B72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D9E7D520DC833B6E6F8B65 /* Pods-PoomgoCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 226VAZJ4DZ;
 				INFOPLIST_FILE = PoomgoCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
